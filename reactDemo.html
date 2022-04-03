@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <style>
+
+            #root {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/1.jpg.avif);
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                position: relative;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                color: lightgoldenrodyellow;
+            }
+
+            ul > li {
+                display: inline-block;
+                padding: 0 15px;
+            }
+            
+            .center {
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+
+            footer {
+                bottom: 0;
+                position: absolute;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="root"></div>
+
+        <script type="text/babel">
+
+            function Nav() {
+                
+
+                return (
+                    <nav>
+                        <h3>Logo</h3>
+                        <ul>
+                            <li> Home </li>
+                            <li> About </li>
+                            <li> Contact </li>
+                        </ul>
+                    </nav>
+                )
+            }
+
+            function Body() {
+                
+                return (
+                    <div class="center">
+                        <h1>Welcome</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur a Eum, eveniet.</p>
+                        <a href="login.html" class="login" target="_blank">Login</a>
+                    </div>
+                )
+            }
+
+            function Footer() {
+                return <footer>my website copyright@2018</footer>
+            }
+
+            function App() {
+                return (
+                    <>
+                        <Nav></Nav>
+                        <Body />
+                        <Footer />
+                    </>
+                )
+            }
+
+            ReactDOM.render(<App />, document.getElementById('root'));
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+// function Heading() {
+                
+    //     return <h1>Ayush</h1>;
+    // }
+
+    // function P() {
+        
+    //     return <p>Learn how to configure a non-root public URL by running `npm run build`</p>                
+    // }
+
+    // function Button(props) {
+        
+    //     return <button style={{background: props.color, padding: '5px', marginRight: '15px'}}>{props.text}</button>
+    // }
+
+    // function App() {
+    //     return (
+    //         <div>
+    //             <Heading />
+    //             <P></P>
+    //             <Button text={'Save'} color={'green'}></Button>
+    //             <Button text={'Reset'} color={'red'}></Button>
+    //         </div>
+    //     )
+    // } -->

@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+#input{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid green;
+    font-weight: bold;
+    background: transparent;
+}
+.auto{
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+}
+.container{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/1.jpg.avif);
+background-position: center;
+background-size: cover;
+overflow: hidden;
+position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  
+}
+nav h3{
+   color: lightgoldenrodyellow;
+   font-size: 35px;
+   cursor: pointer;
+}
+li{
+    display: inline-block;
+    padding: 0 15px
+}
+ul li a{
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    font-weight:  bold;
+    font-size: 20px;
+    transition: 1s;
+}
+li a:hover{
+    color: brown
+}
+
+.center{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.center h1{
+    font-size: 50px;
+}
+.center p {
+    font-size: 14px;
+}
+.login{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    transition:  1s;    
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px
+}
+.login:hover{
+    background:white;
+    color: black;
+}
